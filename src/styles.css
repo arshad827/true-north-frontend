@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.conntainer {
+    padding: 0px 120px 0px 120px
+}
+
+.true_n_auto_complete {
+    width: 100%;
+}
+
+.spacer {
+    height: 15px;
+    display: inline-block;
+    width: 100%
+}

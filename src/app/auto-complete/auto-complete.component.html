@@ -1,0 +1,16 @@
+<form [formGroup]="form">
+    <mat-form-field class="true_n_auto_complete">
+        <mat-select formControlName="myControl" placeholder="super-heroes" [multiple]="true" #multiSelect>
+
+            <mat-option>
+                <ngx-mat-select-search formControlName="myControlsearch"></ngx-mat-select-search>
+            </mat-option>
+            <mat-option (click)=onselect(option) *ngFor="let option of filteredOptions | async" [value]="option">
+                {{option.name}}
+            </mat-option>
+
+        </mat-select>
+
+    </mat-form-field>
+</form>
+<div id="chartdiv" style="width: 100%; height: 500px"></div>
